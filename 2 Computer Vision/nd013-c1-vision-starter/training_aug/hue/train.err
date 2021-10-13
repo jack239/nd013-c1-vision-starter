@@ -1,0 +1,678 @@
+WARNING:tensorflow:Collective ops is not configured at program startup. Some performance features may not be enabled.
+W1010 20:56:24.744145 140213546981184 mirrored_strategy.py:379] Collective ops is not configured at program startup. Some performance features may not be enabled.
+INFO:tensorflow:Using MirroredStrategy with devices ('/job:localhost/replica:0/task:0/device:GPU:0',)
+I1010 20:56:24.781595 140213546981184 mirrored_strategy.py:369] Using MirroredStrategy with devices ('/job:localhost/replica:0/task:0/device:GPU:0',)
+INFO:tensorflow:Maybe overwriting train_steps: None
+I1010 20:56:24.788803 140213546981184 config_util.py:552] Maybe overwriting train_steps: None
+INFO:tensorflow:Maybe overwriting use_bfloat16: False
+I1010 20:56:24.788886 140213546981184 config_util.py:552] Maybe overwriting use_bfloat16: False
+WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/object_detection/model_lib_v2.py:557: StrategyBase.experimental_distribute_datasets_from_function (from tensorflow.python.distribute.distribute_lib) is deprecated and will be removed in a future version.
+Instructions for updating:
+rename to distribute_datasets_from_function
+W1010 20:56:24.806446 140213546981184 deprecation.py:330] From /usr/local/lib/python3.8/dist-packages/object_detection/model_lib_v2.py:557: StrategyBase.experimental_distribute_datasets_from_function (from tensorflow.python.distribute.distribute_lib) is deprecated and will be removed in a future version.
+Instructions for updating:
+rename to distribute_datasets_from_function
+INFO:tensorflow:Reading unweighted datasets: ['/app/project/project_data/splitted//train/segment-10500357041547037089_1474_800_1494_800_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10498013744573185290_1240_000_1260_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10096619443888687526_2820_000_2840_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11846396154240966170_3540_000_3560_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10206293520369375008_2796_800_2816_800_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-1191788760630624072_3880_000_3900_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11004685739714500220_2300_000_2320_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10235335145367115211_5420_000_5440_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10107710434105775874_760_000_780_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11489533038039664633_4820_000_4840_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10596949720463106554_1933_530_1953_530_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11070802577416161387_740_000_760_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10599748131695282446_1380_000_1400_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11199484219241918646_2810_030_2830_030_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-12200383401366682847_2552_140_2572_140_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10923963890428322967_1445_000_1465_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-12174529769287588121_3848_440_3868_440_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10724020115992582208_7660_400_7680_400_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11219370372259322863_5320_000_5340_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11839652018869852123_2565_000_2585_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11388947676680954806_5427_320_5447_320_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10226164909075980558_180_000_200_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-12179768245749640056_5561_070_5581_070_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10975280749486260148_940_000_960_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10444454289801298640_4360_000_4380_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11126313430116606120_1439_990_1459_990_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10241508783381919015_2889_360_2909_360_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11623618970700582562_2840_367_2860_367_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10023947602400723454_1120_000_1140_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11139647661584646830_5470_000_5490_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11971497357570544465_1200_000_1220_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10584247114982259878_490_000_510_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-12161824480686739258_1813_380_1833_380_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10750135302241325253_180_000_200_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11925224148023145510_1040_000_1060_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11060291335850384275_3761_210_3781_210_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10786629299947667143_3440_000_3460_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11252086830380107152_1540_000_1560_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-1083056852838271990_4080_000_4100_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11588853832866011756_2184_462_2204_462_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10676267326664322837_311_180_331_180_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10231929575853664160_1160_000_1180_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10391312872392849784_4099_400_4119_400_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-1208303279778032257_1360_000_1380_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11236550977973464715_3620_000_3640_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10072231702153043603_5725_000_5745_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-1022527355599519580_4866_960_4886_960_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11076364019363412893_1711_000_1731_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10094743350625019937_3420_000_3440_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11718898130355901268_2300_000_2320_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11183906854663518829_2294_000_2314_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10455472356147194054_1560_000_1580_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-1146261869236413282_1680_000_1700_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11119453952284076633_1369_940_1389_940_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11355519273066561009_5323_000_5343_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11928449532664718059_1200_000_1220_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11454085070345530663_1905_000_1925_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10793018113277660068_2714_540_2734_540_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10061305430875486848_1080_000_1100_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10770759614217273359_1465_000_1485_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11318901554551149504_520_000_540_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11566385337103696871_5740_000_5760_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10082223140073588526_6140_000_6160_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-12012663867578114640_820_000_840_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10275144660749673822_5755_561_5775_561_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10588771936253546636_2300_000_2320_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11392401368700458296_1086_429_1106_429_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10625026498155904401_200_000_220_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11967272535264406807_580_000_600_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11918003324473417938_1400_000_1420_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10964956617027590844_1584_680_1604_680_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10940952441434390507_1888_710_1908_710_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-1051897962568538022_238_170_258_170_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10734565072045778791_440_000_460_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11017034898130016754_697_830_717_830_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10526338824408452410_5714_660_5734_660_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10517728057304349900_3360_000_3380_000_with_camera_labels.tfrecord']
+I1010 20:56:24.809257 140213546981184 dataset_builder.py:163] Reading unweighted datasets: ['/app/project/project_data/splitted//train/segment-10500357041547037089_1474_800_1494_800_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10498013744573185290_1240_000_1260_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10096619443888687526_2820_000_2840_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11846396154240966170_3540_000_3560_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10206293520369375008_2796_800_2816_800_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-1191788760630624072_3880_000_3900_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11004685739714500220_2300_000_2320_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10235335145367115211_5420_000_5440_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10107710434105775874_760_000_780_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11489533038039664633_4820_000_4840_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10596949720463106554_1933_530_1953_530_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11070802577416161387_740_000_760_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10599748131695282446_1380_000_1400_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11199484219241918646_2810_030_2830_030_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-12200383401366682847_2552_140_2572_140_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10923963890428322967_1445_000_1465_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-12174529769287588121_3848_440_3868_440_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10724020115992582208_7660_400_7680_400_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11219370372259322863_5320_000_5340_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11839652018869852123_2565_000_2585_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11388947676680954806_5427_320_5447_320_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10226164909075980558_180_000_200_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-12179768245749640056_5561_070_5581_070_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10975280749486260148_940_000_960_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10444454289801298640_4360_000_4380_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11126313430116606120_1439_990_1459_990_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10241508783381919015_2889_360_2909_360_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11623618970700582562_2840_367_2860_367_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10023947602400723454_1120_000_1140_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11139647661584646830_5470_000_5490_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11971497357570544465_1200_000_1220_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10584247114982259878_490_000_510_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-12161824480686739258_1813_380_1833_380_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10750135302241325253_180_000_200_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11925224148023145510_1040_000_1060_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11060291335850384275_3761_210_3781_210_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10786629299947667143_3440_000_3460_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11252086830380107152_1540_000_1560_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-1083056852838271990_4080_000_4100_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11588853832866011756_2184_462_2204_462_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10676267326664322837_311_180_331_180_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10231929575853664160_1160_000_1180_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10391312872392849784_4099_400_4119_400_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-1208303279778032257_1360_000_1380_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11236550977973464715_3620_000_3640_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10072231702153043603_5725_000_5745_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-1022527355599519580_4866_960_4886_960_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11076364019363412893_1711_000_1731_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10094743350625019937_3420_000_3440_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11718898130355901268_2300_000_2320_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11183906854663518829_2294_000_2314_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10455472356147194054_1560_000_1580_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-1146261869236413282_1680_000_1700_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11119453952284076633_1369_940_1389_940_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11355519273066561009_5323_000_5343_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11928449532664718059_1200_000_1220_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11454085070345530663_1905_000_1925_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10793018113277660068_2714_540_2734_540_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10061305430875486848_1080_000_1100_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10770759614217273359_1465_000_1485_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11318901554551149504_520_000_540_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11566385337103696871_5740_000_5760_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10082223140073588526_6140_000_6160_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-12012663867578114640_820_000_840_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10275144660749673822_5755_561_5775_561_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10588771936253546636_2300_000_2320_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11392401368700458296_1086_429_1106_429_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10625026498155904401_200_000_220_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11967272535264406807_580_000_600_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11918003324473417938_1400_000_1420_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10964956617027590844_1584_680_1604_680_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10940952441434390507_1888_710_1908_710_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-1051897962568538022_238_170_258_170_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10734565072045778791_440_000_460_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11017034898130016754_697_830_717_830_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10526338824408452410_5714_660_5734_660_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10517728057304349900_3360_000_3380_000_with_camera_labels.tfrecord']
+INFO:tensorflow:Reading record datasets for input file: ['/app/project/project_data/splitted//train/segment-10500357041547037089_1474_800_1494_800_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10498013744573185290_1240_000_1260_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10096619443888687526_2820_000_2840_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11846396154240966170_3540_000_3560_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10206293520369375008_2796_800_2816_800_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-1191788760630624072_3880_000_3900_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11004685739714500220_2300_000_2320_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10235335145367115211_5420_000_5440_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10107710434105775874_760_000_780_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11489533038039664633_4820_000_4840_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10596949720463106554_1933_530_1953_530_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11070802577416161387_740_000_760_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10599748131695282446_1380_000_1400_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11199484219241918646_2810_030_2830_030_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-12200383401366682847_2552_140_2572_140_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10923963890428322967_1445_000_1465_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-12174529769287588121_3848_440_3868_440_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10724020115992582208_7660_400_7680_400_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11219370372259322863_5320_000_5340_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11839652018869852123_2565_000_2585_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11388947676680954806_5427_320_5447_320_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10226164909075980558_180_000_200_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-12179768245749640056_5561_070_5581_070_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10975280749486260148_940_000_960_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10444454289801298640_4360_000_4380_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11126313430116606120_1439_990_1459_990_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10241508783381919015_2889_360_2909_360_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11623618970700582562_2840_367_2860_367_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10023947602400723454_1120_000_1140_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11139647661584646830_5470_000_5490_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11971497357570544465_1200_000_1220_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10584247114982259878_490_000_510_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-12161824480686739258_1813_380_1833_380_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10750135302241325253_180_000_200_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11925224148023145510_1040_000_1060_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11060291335850384275_3761_210_3781_210_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10786629299947667143_3440_000_3460_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11252086830380107152_1540_000_1560_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-1083056852838271990_4080_000_4100_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11588853832866011756_2184_462_2204_462_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10676267326664322837_311_180_331_180_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10231929575853664160_1160_000_1180_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10391312872392849784_4099_400_4119_400_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-1208303279778032257_1360_000_1380_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11236550977973464715_3620_000_3640_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10072231702153043603_5725_000_5745_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-1022527355599519580_4866_960_4886_960_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11076364019363412893_1711_000_1731_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10094743350625019937_3420_000_3440_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11718898130355901268_2300_000_2320_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11183906854663518829_2294_000_2314_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10455472356147194054_1560_000_1580_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-1146261869236413282_1680_000_1700_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11119453952284076633_1369_940_1389_940_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11355519273066561009_5323_000_5343_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11928449532664718059_1200_000_1220_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11454085070345530663_1905_000_1925_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10793018113277660068_2714_540_2734_540_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10061305430875486848_1080_000_1100_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10770759614217273359_1465_000_1485_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11318901554551149504_520_000_540_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11566385337103696871_5740_000_5760_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10082223140073588526_6140_000_6160_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-12012663867578114640_820_000_840_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10275144660749673822_5755_561_5775_561_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10588771936253546636_2300_000_2320_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11392401368700458296_1086_429_1106_429_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10625026498155904401_200_000_220_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11967272535264406807_580_000_600_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11918003324473417938_1400_000_1420_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10964956617027590844_1584_680_1604_680_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10940952441434390507_1888_710_1908_710_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-1051897962568538022_238_170_258_170_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10734565072045778791_440_000_460_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11017034898130016754_697_830_717_830_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10526338824408452410_5714_660_5734_660_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10517728057304349900_3360_000_3380_000_with_camera_labels.tfrecord']
+I1010 20:56:24.815296 140213546981184 dataset_builder.py:80] Reading record datasets for input file: ['/app/project/project_data/splitted//train/segment-10500357041547037089_1474_800_1494_800_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10498013744573185290_1240_000_1260_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10096619443888687526_2820_000_2840_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11846396154240966170_3540_000_3560_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10206293520369375008_2796_800_2816_800_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-1191788760630624072_3880_000_3900_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11004685739714500220_2300_000_2320_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10235335145367115211_5420_000_5440_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10107710434105775874_760_000_780_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11489533038039664633_4820_000_4840_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10596949720463106554_1933_530_1953_530_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11070802577416161387_740_000_760_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10599748131695282446_1380_000_1400_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11199484219241918646_2810_030_2830_030_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-12200383401366682847_2552_140_2572_140_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10923963890428322967_1445_000_1465_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-12174529769287588121_3848_440_3868_440_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10724020115992582208_7660_400_7680_400_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11219370372259322863_5320_000_5340_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11839652018869852123_2565_000_2585_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11388947676680954806_5427_320_5447_320_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10226164909075980558_180_000_200_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-12179768245749640056_5561_070_5581_070_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10975280749486260148_940_000_960_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10444454289801298640_4360_000_4380_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11126313430116606120_1439_990_1459_990_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10241508783381919015_2889_360_2909_360_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11623618970700582562_2840_367_2860_367_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10023947602400723454_1120_000_1140_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11139647661584646830_5470_000_5490_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11971497357570544465_1200_000_1220_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10584247114982259878_490_000_510_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-12161824480686739258_1813_380_1833_380_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10750135302241325253_180_000_200_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11925224148023145510_1040_000_1060_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11060291335850384275_3761_210_3781_210_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10786629299947667143_3440_000_3460_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11252086830380107152_1540_000_1560_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-1083056852838271990_4080_000_4100_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11588853832866011756_2184_462_2204_462_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10676267326664322837_311_180_331_180_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10231929575853664160_1160_000_1180_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10391312872392849784_4099_400_4119_400_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-1208303279778032257_1360_000_1380_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11236550977973464715_3620_000_3640_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10072231702153043603_5725_000_5745_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-1022527355599519580_4866_960_4886_960_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11076364019363412893_1711_000_1731_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10094743350625019937_3420_000_3440_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11718898130355901268_2300_000_2320_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11183906854663518829_2294_000_2314_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10455472356147194054_1560_000_1580_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-1146261869236413282_1680_000_1700_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11119453952284076633_1369_940_1389_940_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11355519273066561009_5323_000_5343_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11928449532664718059_1200_000_1220_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11454085070345530663_1905_000_1925_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10793018113277660068_2714_540_2734_540_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10061305430875486848_1080_000_1100_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10770759614217273359_1465_000_1485_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11318901554551149504_520_000_540_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11566385337103696871_5740_000_5760_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10082223140073588526_6140_000_6160_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-12012663867578114640_820_000_840_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10275144660749673822_5755_561_5775_561_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10588771936253546636_2300_000_2320_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11392401368700458296_1086_429_1106_429_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10625026498155904401_200_000_220_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11967272535264406807_580_000_600_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11918003324473417938_1400_000_1420_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10964956617027590844_1584_680_1604_680_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10940952441434390507_1888_710_1908_710_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-1051897962568538022_238_170_258_170_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10734565072045778791_440_000_460_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-11017034898130016754_697_830_717_830_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10526338824408452410_5714_660_5734_660_with_camera_labels.tfrecord', '/app/project/project_data/splitted//train/segment-10517728057304349900_3360_000_3380_000_with_camera_labels.tfrecord']
+INFO:tensorflow:Number of filenames to read: 80
+I1010 20:56:24.815373 140213546981184 dataset_builder.py:81] Number of filenames to read: 80
+WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/object_detection/builders/dataset_builder.py:101: parallel_interleave (from tensorflow.python.data.experimental.ops.interleave_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.interleave(map_func, cycle_length, block_length, num_parallel_calls=tf.data.AUTOTUNE)` instead. If sloppy execution is desired, use `tf.data.Options.experimental_deterministic`.
+W1010 20:56:24.817102 140213546981184 deprecation.py:330] From /usr/local/lib/python3.8/dist-packages/object_detection/builders/dataset_builder.py:101: parallel_interleave (from tensorflow.python.data.experimental.ops.interleave_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.interleave(map_func, cycle_length, block_length, num_parallel_calls=tf.data.AUTOTUNE)` instead. If sloppy execution is desired, use `tf.data.Options.experimental_deterministic`.
+WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/object_detection/builders/dataset_builder.py:236: DatasetV1.map_with_legacy_function (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map()
+W1010 20:56:24.832609 140213546981184 deprecation.py:330] From /usr/local/lib/python3.8/dist-packages/object_detection/builders/dataset_builder.py:236: DatasetV1.map_with_legacy_function (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map()
+WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/util/dispatch.py:206: sparse_to_dense (from tensorflow.python.ops.sparse_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Create a `tf.sparse.SparseTensor` and use `tf.sparse.to_dense` instead.
+W1010 20:56:33.063466 140213546981184 deprecation.py:330] From /usr/local/lib/python3.8/dist-packages/tensorflow/python/util/dispatch.py:206: sparse_to_dense (from tensorflow.python.ops.sparse_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Create a `tf.sparse.SparseTensor` and use `tf.sparse.to_dense` instead.
+WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/util/dispatch.py:206: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+W1010 20:56:36.799121 140213546981184 deprecation.py:330] From /usr/local/lib/python3.8/dist-packages/tensorflow/python/util/dispatch.py:206: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/autograph/impl/api.py:464: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+W1010 20:56:38.754592 140213546981184 deprecation.py:330] From /usr/local/lib/python3.8/dist-packages/tensorflow/python/autograph/impl/api.py:464: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+/usr/local/lib/python3.8/dist-packages/tensorflow/python/keras/backend.py:435: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn('`tf.keras.backend.set_learning_phase` is deprecated and '
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I1010 20:57:38.711244 140213546981184 cross_device_ops.py:619] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I1010 20:57:38.712063 140213546981184 cross_device_ops.py:619] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I1010 20:57:38.713616 140213546981184 cross_device_ops.py:619] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I1010 20:57:38.714328 140213546981184 cross_device_ops.py:619] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I1010 20:57:38.715895 140213546981184 cross_device_ops.py:619] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I1010 20:57:38.716584 140213546981184 cross_device_ops.py:619] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I1010 20:57:38.718417 140213546981184 cross_device_ops.py:619] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I1010 20:57:38.719123 140213546981184 cross_device_ops.py:619] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I1010 20:57:38.720379 140213546981184 cross_device_ops.py:619] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+INFO:tensorflow:Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+I1010 20:57:38.721069 140213546981184 cross_device_ops.py:619] Reduce to /job:localhost/replica:0/task:0/device:CPU:0 then broadcast to ('/job:localhost/replica:0/task:0/device:CPU:0',).
+WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/util/deprecation.py:602: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+W1010 20:57:40.263556 140196447807232 deprecation.py:528] From /usr/local/lib/python3.8/dist-packages/tensorflow/python/util/deprecation.py:602: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+INFO:tensorflow:Step 100 per-step time 1.996s
+I1010 21:00:58.661616 140213546981184 model_lib_v2.py:698] Step 100 per-step time 1.996s
+INFO:tensorflow:{'Loss/classification_loss': 0.61564165,
+ 'Loss/localization_loss': 0.94459015,
+ 'Loss/regularization_loss': 0.96132153,
+ 'Loss/total_loss': 2.5215533,
+ 'learning_rate': 0.014666351}
+I1010 21:00:58.661862 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.61564165,
+ 'Loss/localization_loss': 0.94459015,
+ 'Loss/regularization_loss': 0.96132153,
+ 'Loss/total_loss': 2.5215533,
+ 'learning_rate': 0.014666351}
+INFO:tensorflow:Step 200 per-step time 1.619s
+I1010 21:03:40.589859 140213546981184 model_lib_v2.py:698] Step 200 per-step time 1.619s
+INFO:tensorflow:{'Loss/classification_loss': 0.61050135,
+ 'Loss/localization_loss': 0.8295045,
+ 'Loss/regularization_loss': 0.9543676,
+ 'Loss/total_loss': 2.3943734,
+ 'learning_rate': 0.0159997}
+I1010 21:03:40.590066 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.61050135,
+ 'Loss/localization_loss': 0.8295045,
+ 'Loss/regularization_loss': 0.9543676,
+ 'Loss/total_loss': 2.3943734,
+ 'learning_rate': 0.0159997}
+INFO:tensorflow:Step 300 per-step time 1.623s
+I1010 21:06:22.933398 140213546981184 model_lib_v2.py:698] Step 300 per-step time 1.623s
+INFO:tensorflow:{'Loss/classification_loss': 0.48779154,
+ 'Loss/localization_loss': 0.67522585,
+ 'Loss/regularization_loss': 0.94304824,
+ 'Loss/total_loss': 2.1060658,
+ 'learning_rate': 0.01733305}
+I1010 21:06:22.933617 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.48779154,
+ 'Loss/localization_loss': 0.67522585,
+ 'Loss/regularization_loss': 0.94304824,
+ 'Loss/total_loss': 2.1060658,
+ 'learning_rate': 0.01733305}
+INFO:tensorflow:Step 400 per-step time 1.628s
+I1010 21:09:05.714738 140213546981184 model_lib_v2.py:698] Step 400 per-step time 1.628s
+INFO:tensorflow:{'Loss/classification_loss': 0.5427149,
+ 'Loss/localization_loss': 0.68986756,
+ 'Loss/regularization_loss': 0.9310777,
+ 'Loss/total_loss': 2.16366,
+ 'learning_rate': 0.0186664}
+I1010 21:09:05.714948 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.5427149,
+ 'Loss/localization_loss': 0.68986756,
+ 'Loss/regularization_loss': 0.9310777,
+ 'Loss/total_loss': 2.16366,
+ 'learning_rate': 0.0186664}
+INFO:tensorflow:Step 500 per-step time 1.627s
+I1010 21:11:48.434711 140213546981184 model_lib_v2.py:698] Step 500 per-step time 1.627s
+INFO:tensorflow:{'Loss/classification_loss': 0.6766489,
+ 'Loss/localization_loss': 0.76385075,
+ 'Loss/regularization_loss': 0.91860896,
+ 'Loss/total_loss': 2.3591087,
+ 'learning_rate': 0.01999975}
+I1010 21:11:48.434910 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.6766489,
+ 'Loss/localization_loss': 0.76385075,
+ 'Loss/regularization_loss': 0.91860896,
+ 'Loss/total_loss': 2.3591087,
+ 'learning_rate': 0.01999975}
+INFO:tensorflow:Step 600 per-step time 1.626s
+I1010 21:14:30.996451 140213546981184 model_lib_v2.py:698] Step 600 per-step time 1.626s
+INFO:tensorflow:{'Loss/classification_loss': 1.0147904,
+ 'Loss/localization_loss': 0.69662815,
+ 'Loss/regularization_loss': 0.9099505,
+ 'Loss/total_loss': 2.6213691,
+ 'learning_rate': 0.0213331}
+I1010 21:14:30.996664 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 1.0147904,
+ 'Loss/localization_loss': 0.69662815,
+ 'Loss/regularization_loss': 0.9099505,
+ 'Loss/total_loss': 2.6213691,
+ 'learning_rate': 0.0213331}
+INFO:tensorflow:Step 700 per-step time 1.621s
+I1010 21:17:13.064973 140213546981184 model_lib_v2.py:698] Step 700 per-step time 1.621s
+INFO:tensorflow:{'Loss/classification_loss': 0.6764315,
+ 'Loss/localization_loss': 0.9834316,
+ 'Loss/regularization_loss': 0.9001403,
+ 'Loss/total_loss': 2.5600033,
+ 'learning_rate': 0.02266645}
+I1010 21:17:13.065186 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.6764315,
+ 'Loss/localization_loss': 0.9834316,
+ 'Loss/regularization_loss': 0.9001403,
+ 'Loss/total_loss': 2.5600033,
+ 'learning_rate': 0.02266645}
+INFO:tensorflow:Step 800 per-step time 1.624s
+I1010 21:19:55.489637 140213546981184 model_lib_v2.py:698] Step 800 per-step time 1.624s
+INFO:tensorflow:{'Loss/classification_loss': 0.9974137,
+ 'Loss/localization_loss': 0.46582827,
+ 'Loss/regularization_loss': 0.9245947,
+ 'Loss/total_loss': 2.3878367,
+ 'learning_rate': 0.023999799}
+I1010 21:19:55.489847 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.9974137,
+ 'Loss/localization_loss': 0.46582827,
+ 'Loss/regularization_loss': 0.9245947,
+ 'Loss/total_loss': 2.3878367,
+ 'learning_rate': 0.023999799}
+INFO:tensorflow:Step 900 per-step time 1.627s
+I1010 21:22:38.194470 140213546981184 model_lib_v2.py:698] Step 900 per-step time 1.627s
+INFO:tensorflow:{'Loss/classification_loss': 0.5705186,
+ 'Loss/localization_loss': 0.88263446,
+ 'Loss/regularization_loss': 0.9110411,
+ 'Loss/total_loss': 2.3641942,
+ 'learning_rate': 0.025333151}
+I1010 21:22:38.194682 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.5705186,
+ 'Loss/localization_loss': 0.88263446,
+ 'Loss/regularization_loss': 0.9110411,
+ 'Loss/total_loss': 2.3641942,
+ 'learning_rate': 0.025333151}
+INFO:tensorflow:Step 1000 per-step time 1.623s
+I1010 21:25:20.514262 140213546981184 model_lib_v2.py:698] Step 1000 per-step time 1.623s
+INFO:tensorflow:{'Loss/classification_loss': 0.4509846,
+ 'Loss/localization_loss': 0.70998055,
+ 'Loss/regularization_loss': 0.8972895,
+ 'Loss/total_loss': 2.0582547,
+ 'learning_rate': 0.0266665}
+I1010 21:25:20.514470 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.4509846,
+ 'Loss/localization_loss': 0.70998055,
+ 'Loss/regularization_loss': 0.8972895,
+ 'Loss/total_loss': 2.0582547,
+ 'learning_rate': 0.0266665}
+INFO:tensorflow:Step 1100 per-step time 1.638s
+I1010 21:28:04.320098 140213546981184 model_lib_v2.py:698] Step 1100 per-step time 1.638s
+INFO:tensorflow:{'Loss/classification_loss': 0.5846052,
+ 'Loss/localization_loss': 0.7097006,
+ 'Loss/regularization_loss': 0.8801409,
+ 'Loss/total_loss': 2.1744466,
+ 'learning_rate': 0.02799985}
+I1010 21:28:04.320308 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.5846052,
+ 'Loss/localization_loss': 0.7097006,
+ 'Loss/regularization_loss': 0.8801409,
+ 'Loss/total_loss': 2.1744466,
+ 'learning_rate': 0.02799985}
+INFO:tensorflow:Step 1200 per-step time 1.628s
+I1010 21:30:47.098947 140213546981184 model_lib_v2.py:698] Step 1200 per-step time 1.628s
+INFO:tensorflow:{'Loss/classification_loss': 0.5169888,
+ 'Loss/localization_loss': 0.6360943,
+ 'Loss/regularization_loss': 0.8622154,
+ 'Loss/total_loss': 2.0152986,
+ 'learning_rate': 0.0293332}
+I1010 21:30:47.099156 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.5169888,
+ 'Loss/localization_loss': 0.6360943,
+ 'Loss/regularization_loss': 0.8622154,
+ 'Loss/total_loss': 2.0152986,
+ 'learning_rate': 0.0293332}
+INFO:tensorflow:Step 1300 per-step time 1.626s
+I1010 21:33:29.665827 140213546981184 model_lib_v2.py:698] Step 1300 per-step time 1.626s
+INFO:tensorflow:{'Loss/classification_loss': 0.5594305,
+ 'Loss/localization_loss': 0.6497783,
+ 'Loss/regularization_loss': 0.8435822,
+ 'Loss/total_loss': 2.052791,
+ 'learning_rate': 0.03066655}
+I1010 21:33:29.666034 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.5594305,
+ 'Loss/localization_loss': 0.6497783,
+ 'Loss/regularization_loss': 0.8435822,
+ 'Loss/total_loss': 2.052791,
+ 'learning_rate': 0.03066655}
+INFO:tensorflow:Step 1400 per-step time 1.633s
+I1010 21:36:12.925145 140213546981184 model_lib_v2.py:698] Step 1400 per-step time 1.633s
+INFO:tensorflow:{'Loss/classification_loss': 0.53131634,
+ 'Loss/localization_loss': 0.64953595,
+ 'Loss/regularization_loss': 0.82492733,
+ 'Loss/total_loss': 2.0057795,
+ 'learning_rate': 0.0319999}
+I1010 21:36:12.925366 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.53131634,
+ 'Loss/localization_loss': 0.64953595,
+ 'Loss/regularization_loss': 0.82492733,
+ 'Loss/total_loss': 2.0057795,
+ 'learning_rate': 0.0319999}
+INFO:tensorflow:Step 1500 per-step time 1.631s
+I1010 21:38:56.074503 140213546981184 model_lib_v2.py:698] Step 1500 per-step time 1.631s
+INFO:tensorflow:{'Loss/classification_loss': 0.41307375,
+ 'Loss/localization_loss': 0.5482372,
+ 'Loss/regularization_loss': 0.80583245,
+ 'Loss/total_loss': 1.7671434,
+ 'learning_rate': 0.03333325}
+I1010 21:38:56.074712 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.41307375,
+ 'Loss/localization_loss': 0.5482372,
+ 'Loss/regularization_loss': 0.80583245,
+ 'Loss/total_loss': 1.7671434,
+ 'learning_rate': 0.03333325}
+INFO:tensorflow:Step 1600 per-step time 1.627s
+I1010 21:41:38.807744 140213546981184 model_lib_v2.py:698] Step 1600 per-step time 1.627s
+INFO:tensorflow:{'Loss/classification_loss': 0.4791376,
+ 'Loss/localization_loss': 0.60401785,
+ 'Loss/regularization_loss': 0.7869668,
+ 'Loss/total_loss': 1.8701223,
+ 'learning_rate': 0.034666598}
+I1010 21:41:38.809088 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.4791376,
+ 'Loss/localization_loss': 0.60401785,
+ 'Loss/regularization_loss': 0.7869668,
+ 'Loss/total_loss': 1.8701223,
+ 'learning_rate': 0.034666598}
+INFO:tensorflow:Step 1700 per-step time 1.630s
+I1010 21:44:21.782808 140213546981184 model_lib_v2.py:698] Step 1700 per-step time 1.630s
+INFO:tensorflow:{'Loss/classification_loss': 0.54967093,
+ 'Loss/localization_loss': 0.7487285,
+ 'Loss/regularization_loss': 0.7673978,
+ 'Loss/total_loss': 2.0657973,
+ 'learning_rate': 0.03599995}
+I1010 21:44:21.783016 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.54967093,
+ 'Loss/localization_loss': 0.7487285,
+ 'Loss/regularization_loss': 0.7673978,
+ 'Loss/total_loss': 2.0657973,
+ 'learning_rate': 0.03599995}
+INFO:tensorflow:Step 1800 per-step time 1.630s
+I1010 21:47:04.788618 140213546981184 model_lib_v2.py:698] Step 1800 per-step time 1.630s
+INFO:tensorflow:{'Loss/classification_loss': 0.54360664,
+ 'Loss/localization_loss': 0.5180978,
+ 'Loss/regularization_loss': 0.7481563,
+ 'Loss/total_loss': 1.8098607,
+ 'learning_rate': 0.037333302}
+I1010 21:47:04.788816 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.54360664,
+ 'Loss/localization_loss': 0.5180978,
+ 'Loss/regularization_loss': 0.7481563,
+ 'Loss/total_loss': 1.8098607,
+ 'learning_rate': 0.037333302}
+INFO:tensorflow:Step 1900 per-step time 1.630s
+I1010 21:49:47.818703 140213546981184 model_lib_v2.py:698] Step 1900 per-step time 1.630s
+INFO:tensorflow:{'Loss/classification_loss': 0.5496748,
+ 'Loss/localization_loss': 0.7615177,
+ 'Loss/regularization_loss': 0.7290874,
+ 'Loss/total_loss': 2.0402799,
+ 'learning_rate': 0.03866665}
+I1010 21:49:47.818907 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.5496748,
+ 'Loss/localization_loss': 0.7615177,
+ 'Loss/regularization_loss': 0.7290874,
+ 'Loss/total_loss': 2.0402799,
+ 'learning_rate': 0.03866665}
+INFO:tensorflow:Step 2000 per-step time 1.634s
+I1010 21:52:31.268125 140213546981184 model_lib_v2.py:698] Step 2000 per-step time 1.634s
+INFO:tensorflow:{'Loss/classification_loss': 0.5034291,
+ 'Loss/localization_loss': 0.52592003,
+ 'Loss/regularization_loss': 0.70952266,
+ 'Loss/total_loss': 1.7388718,
+ 'learning_rate': 0.04}
+I1010 21:52:31.268342 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.5034291,
+ 'Loss/localization_loss': 0.52592003,
+ 'Loss/regularization_loss': 0.70952266,
+ 'Loss/total_loss': 1.7388718,
+ 'learning_rate': 0.04}
+INFO:tensorflow:Step 2100 per-step time 1.642s
+I1010 21:55:15.426499 140213546981184 model_lib_v2.py:698] Step 2100 per-step time 1.642s
+INFO:tensorflow:{'Loss/classification_loss': 0.39041263,
+ 'Loss/localization_loss': 0.5578864,
+ 'Loss/regularization_loss': 0.6901772,
+ 'Loss/total_loss': 1.6384761,
+ 'learning_rate': 0.039890435}
+I1010 21:55:15.426713 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.39041263,
+ 'Loss/localization_loss': 0.5578864,
+ 'Loss/regularization_loss': 0.6901772,
+ 'Loss/total_loss': 1.6384761,
+ 'learning_rate': 0.039890435}
+INFO:tensorflow:Step 2200 per-step time 1.632s
+I1010 21:57:58.645143 140213546981184 model_lib_v2.py:698] Step 2200 per-step time 1.632s
+INFO:tensorflow:{'Loss/classification_loss': 0.40318817,
+ 'Loss/localization_loss': 0.47869176,
+ 'Loss/regularization_loss': 0.6718213,
+ 'Loss/total_loss': 1.5537012,
+ 'learning_rate': 0.03956295}
+I1010 21:57:58.645348 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.40318817,
+ 'Loss/localization_loss': 0.47869176,
+ 'Loss/regularization_loss': 0.6718213,
+ 'Loss/total_loss': 1.5537012,
+ 'learning_rate': 0.03956295}
+INFO:tensorflow:Step 2300 per-step time 1.630s
+I1010 22:00:41.643465 140213546981184 model_lib_v2.py:698] Step 2300 per-step time 1.630s
+INFO:tensorflow:{'Loss/classification_loss': 0.5069318,
+ 'Loss/localization_loss': 0.55494565,
+ 'Loss/regularization_loss': 0.65597063,
+ 'Loss/total_loss': 1.7178481,
+ 'learning_rate': 0.039021127}
+I1010 22:00:41.643681 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.5069318,
+ 'Loss/localization_loss': 0.55494565,
+ 'Loss/regularization_loss': 0.65597063,
+ 'Loss/total_loss': 1.7178481,
+ 'learning_rate': 0.039021127}
+INFO:tensorflow:Step 2400 per-step time 1.630s
+I1010 22:03:24.597276 140213546981184 model_lib_v2.py:698] Step 2400 per-step time 1.630s
+INFO:tensorflow:{'Loss/classification_loss': 0.39416027,
+ 'Loss/localization_loss': 0.6487305,
+ 'Loss/regularization_loss': 0.6388917,
+ 'Loss/total_loss': 1.6817825,
+ 'learning_rate': 0.03827091}
+I1010 22:03:24.597491 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.39416027,
+ 'Loss/localization_loss': 0.6487305,
+ 'Loss/regularization_loss': 0.6388917,
+ 'Loss/total_loss': 1.6817825,
+ 'learning_rate': 0.03827091}
+INFO:tensorflow:Step 2500 per-step time 1.631s
+I1010 22:06:07.681158 140213546981184 model_lib_v2.py:698] Step 2500 per-step time 1.631s
+INFO:tensorflow:{'Loss/classification_loss': 0.33246428,
+ 'Loss/localization_loss': 0.41370368,
+ 'Loss/regularization_loss': 0.6225937,
+ 'Loss/total_loss': 1.3687617,
+ 'learning_rate': 0.03732051}
+I1010 22:06:07.681365 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.33246428,
+ 'Loss/localization_loss': 0.41370368,
+ 'Loss/regularization_loss': 0.6225937,
+ 'Loss/total_loss': 1.3687617,
+ 'learning_rate': 0.03732051}
+INFO:tensorflow:Step 2600 per-step time 1.628s
+I1010 22:08:50.433062 140213546981184 model_lib_v2.py:698] Step 2600 per-step time 1.628s
+INFO:tensorflow:{'Loss/classification_loss': 0.47392848,
+ 'Loss/localization_loss': 0.5283103,
+ 'Loss/regularization_loss': 0.6070619,
+ 'Loss/total_loss': 1.6093007,
+ 'learning_rate': 0.03618034}
+I1010 22:08:50.433269 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.47392848,
+ 'Loss/localization_loss': 0.5283103,
+ 'Loss/regularization_loss': 0.6070619,
+ 'Loss/total_loss': 1.6093007,
+ 'learning_rate': 0.03618034}
+INFO:tensorflow:Step 2700 per-step time 1.631s
+I1010 22:11:33.579424 140213546981184 model_lib_v2.py:698] Step 2700 per-step time 1.631s
+INFO:tensorflow:{'Loss/classification_loss': 0.4330505,
+ 'Loss/localization_loss': 0.56973594,
+ 'Loss/regularization_loss': 0.5930047,
+ 'Loss/total_loss': 1.5957911,
+ 'learning_rate': 0.034862895}
+I1010 22:11:33.579624 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.4330505,
+ 'Loss/localization_loss': 0.56973594,
+ 'Loss/regularization_loss': 0.5930047,
+ 'Loss/total_loss': 1.5957911,
+ 'learning_rate': 0.034862895}
+INFO:tensorflow:Step 2800 per-step time 1.628s
+I1010 22:14:16.425993 140213546981184 model_lib_v2.py:698] Step 2800 per-step time 1.628s
+INFO:tensorflow:{'Loss/classification_loss': 0.6125524,
+ 'Loss/localization_loss': 0.41271758,
+ 'Loss/regularization_loss': 0.58071387,
+ 'Loss/total_loss': 1.6059839,
+ 'learning_rate': 0.03338261}
+I1010 22:14:16.426228 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.6125524,
+ 'Loss/localization_loss': 0.41271758,
+ 'Loss/regularization_loss': 0.58071387,
+ 'Loss/total_loss': 1.6059839,
+ 'learning_rate': 0.03338261}
+INFO:tensorflow:Step 2900 per-step time 1.628s
+I1010 22:16:59.253088 140213546981184 model_lib_v2.py:698] Step 2900 per-step time 1.628s
+INFO:tensorflow:{'Loss/classification_loss': 0.35879406,
+ 'Loss/localization_loss': 0.4439828,
+ 'Loss/regularization_loss': 0.5688177,
+ 'Loss/total_loss': 1.3715945,
+ 'learning_rate': 0.031755704}
+I1010 22:16:59.253306 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.35879406,
+ 'Loss/localization_loss': 0.4439828,
+ 'Loss/regularization_loss': 0.5688177,
+ 'Loss/total_loss': 1.3715945,
+ 'learning_rate': 0.031755704}
+INFO:tensorflow:Step 3000 per-step time 1.627s
+I1010 22:19:41.943853 140213546981184 model_lib_v2.py:698] Step 3000 per-step time 1.627s
+INFO:tensorflow:{'Loss/classification_loss': 0.4017726,
+ 'Loss/localization_loss': 0.6233871,
+ 'Loss/regularization_loss': 0.55718464,
+ 'Loss/total_loss': 1.5823443,
+ 'learning_rate': 0.03}
+I1010 22:19:41.944071 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.4017726,
+ 'Loss/localization_loss': 0.6233871,
+ 'Loss/regularization_loss': 0.55718464,
+ 'Loss/total_loss': 1.5823443,
+ 'learning_rate': 0.03}
+INFO:tensorflow:Step 3100 per-step time 1.638s
+I1010 22:22:25.785797 140213546981184 model_lib_v2.py:698] Step 3100 per-step time 1.638s
+INFO:tensorflow:{'Loss/classification_loss': 0.33204186,
+ 'Loss/localization_loss': 0.41754547,
+ 'Loss/regularization_loss': 0.5461903,
+ 'Loss/total_loss': 1.2957777,
+ 'learning_rate': 0.028134732}
+I1010 22:22:25.786026 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.33204186,
+ 'Loss/localization_loss': 0.41754547,
+ 'Loss/regularization_loss': 0.5461903,
+ 'Loss/total_loss': 1.2957777,
+ 'learning_rate': 0.028134732}
+INFO:tensorflow:Step 3200 per-step time 1.628s
+I1010 22:25:08.596210 140213546981184 model_lib_v2.py:698] Step 3200 per-step time 1.628s
+INFO:tensorflow:{'Loss/classification_loss': 0.41788012,
+ 'Loss/localization_loss': 0.41379917,
+ 'Loss/regularization_loss': 0.53593963,
+ 'Loss/total_loss': 1.3676189,
+ 'learning_rate': 0.026180338}
+I1010 22:25:08.596425 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.41788012,
+ 'Loss/localization_loss': 0.41379917,
+ 'Loss/regularization_loss': 0.53593963,
+ 'Loss/total_loss': 1.3676189,
+ 'learning_rate': 0.026180338}
+INFO:tensorflow:Step 3300 per-step time 1.628s
+I1010 22:27:51.378643 140213546981184 model_lib_v2.py:698] Step 3300 per-step time 1.628s
+INFO:tensorflow:{'Loss/classification_loss': 0.37961656,
+ 'Loss/localization_loss': 0.41790283,
+ 'Loss/regularization_loss': 0.52668995,
+ 'Loss/total_loss': 1.3242093,
+ 'learning_rate': 0.024158232}
+I1010 22:27:51.378859 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.37961656,
+ 'Loss/localization_loss': 0.41790283,
+ 'Loss/regularization_loss': 0.52668995,
+ 'Loss/total_loss': 1.3242093,
+ 'learning_rate': 0.024158232}
+INFO:tensorflow:Step 3400 per-step time 1.632s
+I1010 22:30:34.541714 140213546981184 model_lib_v2.py:698] Step 3400 per-step time 1.632s
+INFO:tensorflow:{'Loss/classification_loss': 0.31799394,
+ 'Loss/localization_loss': 0.43211657,
+ 'Loss/regularization_loss': 0.51843333,
+ 'Loss/total_loss': 1.2685438,
+ 'learning_rate': 0.022090567}
+I1010 22:30:34.541915 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.31799394,
+ 'Loss/localization_loss': 0.43211657,
+ 'Loss/regularization_loss': 0.51843333,
+ 'Loss/total_loss': 1.2685438,
+ 'learning_rate': 0.022090567}
+INFO:tensorflow:Step 3500 per-step time 1.628s
+I1010 22:33:17.372237 140213546981184 model_lib_v2.py:698] Step 3500 per-step time 1.628s
+INFO:tensorflow:{'Loss/classification_loss': 0.3253272,
+ 'Loss/localization_loss': 0.42532322,
+ 'Loss/regularization_loss': 0.51100886,
+ 'Loss/total_loss': 1.2616593,
+ 'learning_rate': 0.019999998}
+I1010 22:33:17.372451 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.3253272,
+ 'Loss/localization_loss': 0.42532322,
+ 'Loss/regularization_loss': 0.51100886,
+ 'Loss/total_loss': 1.2616593,
+ 'learning_rate': 0.019999998}
+INFO:tensorflow:Step 3600 per-step time 1.627s
+I1010 22:36:00.046248 140213546981184 model_lib_v2.py:698] Step 3600 per-step time 1.627s
+INFO:tensorflow:{'Loss/classification_loss': 0.3220694,
+ 'Loss/localization_loss': 0.44177833,
+ 'Loss/regularization_loss': 0.504195,
+ 'Loss/total_loss': 1.2680427,
+ 'learning_rate': 0.01790943}
+I1010 22:36:00.046470 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.3220694,
+ 'Loss/localization_loss': 0.44177833,
+ 'Loss/regularization_loss': 0.504195,
+ 'Loss/total_loss': 1.2680427,
+ 'learning_rate': 0.01790943}
+INFO:tensorflow:Step 3700 per-step time 1.634s
+I1010 22:38:43.407722 140213546981184 model_lib_v2.py:698] Step 3700 per-step time 1.634s
+INFO:tensorflow:{'Loss/classification_loss': 0.31714734,
+ 'Loss/localization_loss': 0.41633806,
+ 'Loss/regularization_loss': 0.49850053,
+ 'Loss/total_loss': 1.2319859,
+ 'learning_rate': 0.015841765}
+I1010 22:38:43.407919 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.31714734,
+ 'Loss/localization_loss': 0.41633806,
+ 'Loss/regularization_loss': 0.49850053,
+ 'Loss/total_loss': 1.2319859,
+ 'learning_rate': 0.015841765}
+INFO:tensorflow:Step 3800 per-step time 1.634s
+I1010 22:41:26.771444 140213546981184 model_lib_v2.py:698] Step 3800 per-step time 1.634s
+INFO:tensorflow:{'Loss/classification_loss': 0.28511593,
+ 'Loss/localization_loss': 0.37569615,
+ 'Loss/regularization_loss': 0.49334812,
+ 'Loss/total_loss': 1.1541603,
+ 'learning_rate': 0.013819661}
+I1010 22:41:26.771647 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.28511593,
+ 'Loss/localization_loss': 0.37569615,
+ 'Loss/regularization_loss': 0.49334812,
+ 'Loss/total_loss': 1.1541603,
+ 'learning_rate': 0.013819661}
+INFO:tensorflow:Step 3900 per-step time 1.631s
+I1010 22:44:09.897013 140213546981184 model_lib_v2.py:698] Step 3900 per-step time 1.631s
+INFO:tensorflow:{'Loss/classification_loss': 0.3120126,
+ 'Loss/localization_loss': 0.31412664,
+ 'Loss/regularization_loss': 0.4887945,
+ 'Loss/total_loss': 1.1149337,
+ 'learning_rate': 0.011865267}
+I1010 22:44:09.897611 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.3120126,
+ 'Loss/localization_loss': 0.31412664,
+ 'Loss/regularization_loss': 0.4887945,
+ 'Loss/total_loss': 1.1149337,
+ 'learning_rate': 0.011865267}
+INFO:tensorflow:Step 4000 per-step time 1.630s
+I1010 22:46:52.892666 140213546981184 model_lib_v2.py:698] Step 4000 per-step time 1.630s
+INFO:tensorflow:{'Loss/classification_loss': 0.34915903,
+ 'Loss/localization_loss': 0.4054529,
+ 'Loss/regularization_loss': 0.48494306,
+ 'Loss/total_loss': 1.239555,
+ 'learning_rate': 0.009999999}
+I1010 22:46:52.892878 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.34915903,
+ 'Loss/localization_loss': 0.4054529,
+ 'Loss/regularization_loss': 0.48494306,
+ 'Loss/total_loss': 1.239555,
+ 'learning_rate': 0.009999999}
+INFO:tensorflow:Step 4100 per-step time 1.642s
+I1010 22:49:37.078833 140213546981184 model_lib_v2.py:698] Step 4100 per-step time 1.642s
+INFO:tensorflow:{'Loss/classification_loss': 0.30903244,
+ 'Loss/localization_loss': 0.29609853,
+ 'Loss/regularization_loss': 0.4820003,
+ 'Loss/total_loss': 1.0871313,
+ 'learning_rate': 0.008244295}
+I1010 22:49:37.079059 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.30903244,
+ 'Loss/localization_loss': 0.29609853,
+ 'Loss/regularization_loss': 0.4820003,
+ 'Loss/total_loss': 1.0871313,
+ 'learning_rate': 0.008244295}
+INFO:tensorflow:Step 4200 per-step time 1.632s
+I1010 22:52:20.261112 140213546981184 model_lib_v2.py:698] Step 4200 per-step time 1.632s
+INFO:tensorflow:{'Loss/classification_loss': 0.33192948,
+ 'Loss/localization_loss': 0.33158344,
+ 'Loss/regularization_loss': 0.4793264,
+ 'Loss/total_loss': 1.1428393,
+ 'learning_rate': 0.0066173864}
+I1010 22:52:20.261317 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.33192948,
+ 'Loss/localization_loss': 0.33158344,
+ 'Loss/regularization_loss': 0.4793264,
+ 'Loss/total_loss': 1.1428393,
+ 'learning_rate': 0.0066173864}
+INFO:tensorflow:Step 4300 per-step time 1.633s
+I1010 22:55:03.523922 140213546981184 model_lib_v2.py:698] Step 4300 per-step time 1.633s
+INFO:tensorflow:{'Loss/classification_loss': 0.28780288,
+ 'Loss/localization_loss': 0.3483929,
+ 'Loss/regularization_loss': 0.47727603,
+ 'Loss/total_loss': 1.1134717,
+ 'learning_rate': 0.0051371036}
+I1010 22:55:03.524503 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.28780288,
+ 'Loss/localization_loss': 0.3483929,
+ 'Loss/regularization_loss': 0.47727603,
+ 'Loss/total_loss': 1.1134717,
+ 'learning_rate': 0.0051371036}
+INFO:tensorflow:Step 4400 per-step time 1.634s
+I1010 22:57:46.887766 140213546981184 model_lib_v2.py:698] Step 4400 per-step time 1.634s
+INFO:tensorflow:{'Loss/classification_loss': 0.27468544,
+ 'Loss/localization_loss': 0.42789632,
+ 'Loss/regularization_loss': 0.4756356,
+ 'Loss/total_loss': 1.1782174,
+ 'learning_rate': 0.0038196587}
+I1010 22:57:46.887969 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.27468544,
+ 'Loss/localization_loss': 0.42789632,
+ 'Loss/regularization_loss': 0.4756356,
+ 'Loss/total_loss': 1.1782174,
+ 'learning_rate': 0.0038196587}
+INFO:tensorflow:Step 4500 per-step time 1.636s
+I1010 23:00:30.463134 140213546981184 model_lib_v2.py:698] Step 4500 per-step time 1.636s
+INFO:tensorflow:{'Loss/classification_loss': 0.37471864,
+ 'Loss/localization_loss': 0.51497906,
+ 'Loss/regularization_loss': 0.47444677,
+ 'Loss/total_loss': 1.3641446,
+ 'learning_rate': 0.0026794898}
+I1010 23:00:30.463346 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.37471864,
+ 'Loss/localization_loss': 0.51497906,
+ 'Loss/regularization_loss': 0.47444677,
+ 'Loss/total_loss': 1.3641446,
+ 'learning_rate': 0.0026794898}
+INFO:tensorflow:Step 4600 per-step time 1.633s
+I1010 23:03:13.762468 140213546981184 model_lib_v2.py:698] Step 4600 per-step time 1.633s
+INFO:tensorflow:{'Loss/classification_loss': 0.2740444,
+ 'Loss/localization_loss': 0.3969678,
+ 'Loss/regularization_loss': 0.47360957,
+ 'Loss/total_loss': 1.1446217,
+ 'learning_rate': 0.0017290902}
+I1010 23:03:13.762674 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.2740444,
+ 'Loss/localization_loss': 0.3969678,
+ 'Loss/regularization_loss': 0.47360957,
+ 'Loss/total_loss': 1.1446217,
+ 'learning_rate': 0.0017290902}
+INFO:tensorflow:Step 4700 per-step time 1.633s
+I1010 23:05:57.052815 140213546981184 model_lib_v2.py:698] Step 4700 per-step time 1.633s
+INFO:tensorflow:{'Loss/classification_loss': 0.28154624,
+ 'Loss/localization_loss': 0.35914478,
+ 'Loss/regularization_loss': 0.4730872,
+ 'Loss/total_loss': 1.1137782,
+ 'learning_rate': 0.000978868}
+I1010 23:05:57.053020 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.28154624,
+ 'Loss/localization_loss': 0.35914478,
+ 'Loss/regularization_loss': 0.4730872,
+ 'Loss/total_loss': 1.1137782,
+ 'learning_rate': 0.000978868}
+INFO:tensorflow:Step 4800 per-step time 1.630s
+I1010 23:08:40.007315 140213546981184 model_lib_v2.py:698] Step 4800 per-step time 1.630s
+INFO:tensorflow:{'Loss/classification_loss': 0.30944258,
+ 'Loss/localization_loss': 0.5169382,
+ 'Loss/regularization_loss': 0.47280723,
+ 'Loss/total_loss': 1.299188,
+ 'learning_rate': 0.00043704748}
+I1010 23:08:40.007531 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.30944258,
+ 'Loss/localization_loss': 0.5169382,
+ 'Loss/regularization_loss': 0.47280723,
+ 'Loss/total_loss': 1.299188,
+ 'learning_rate': 0.00043704748}
+INFO:tensorflow:Step 4900 per-step time 1.631s
+I1010 23:11:23.066286 140213546981184 model_lib_v2.py:698] Step 4900 per-step time 1.631s
+INFO:tensorflow:{'Loss/classification_loss': 0.3558565,
+ 'Loss/localization_loss': 0.4966968,
+ 'Loss/regularization_loss': 0.47269735,
+ 'Loss/total_loss': 1.3252506,
+ 'learning_rate': 0.00010956168}
+I1010 23:11:23.066498 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.3558565,
+ 'Loss/localization_loss': 0.4966968,
+ 'Loss/regularization_loss': 0.47269735,
+ 'Loss/total_loss': 1.3252506,
+ 'learning_rate': 0.00010956168}
+INFO:tensorflow:Step 5000 per-step time 1.630s
+I1010 23:14:06.106610 140213546981184 model_lib_v2.py:698] Step 5000 per-step time 1.630s
+INFO:tensorflow:{'Loss/classification_loss': 0.3890726,
+ 'Loss/localization_loss': 0.3845521,
+ 'Loss/regularization_loss': 0.472678,
+ 'Loss/total_loss': 1.2463027,
+ 'learning_rate': 0.0}
+I1010 23:14:06.106806 140213546981184 model_lib_v2.py:701] {'Loss/classification_loss': 0.3890726,
+ 'Loss/localization_loss': 0.3845521,
+ 'Loss/regularization_loss': 0.472678,
+ 'Loss/total_loss': 1.2463027,
+ 'learning_rate': 0.0}
