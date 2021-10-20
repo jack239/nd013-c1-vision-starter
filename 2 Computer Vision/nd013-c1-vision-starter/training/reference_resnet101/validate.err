@@ -1,61 +1,61 @@
 WARNING:tensorflow:Forced number of epochs for all eval validations to be 1.
-W1009 16:36:29.451490 139971077932864 model_lib_v2.py:1081] Forced number of epochs for all eval validations to be 1.
+W1019 01:21:12.061357 139736207411008 model_lib_v2.py:1081] Forced number of epochs for all eval validations to be 1.
 INFO:tensorflow:Maybe overwriting sample_1_of_n_eval_examples: None
-I1009 16:36:29.451956 139971077932864 config_util.py:552] Maybe overwriting sample_1_of_n_eval_examples: None
+I1019 01:21:12.061800 139736207411008 config_util.py:552] Maybe overwriting sample_1_of_n_eval_examples: None
 INFO:tensorflow:Maybe overwriting use_bfloat16: False
-I1009 16:36:29.452238 139971077932864 config_util.py:552] Maybe overwriting use_bfloat16: False
+I1019 01:21:12.062076 139736207411008 config_util.py:552] Maybe overwriting use_bfloat16: False
 INFO:tensorflow:Maybe overwriting eval_num_epochs: 1
-I1009 16:36:29.452442 139971077932864 config_util.py:552] Maybe overwriting eval_num_epochs: 1
+I1019 01:21:12.062322 139736207411008 config_util.py:552] Maybe overwriting eval_num_epochs: 1
 WARNING:tensorflow:Expected number of evaluation epochs is 1, but instead encountered `eval_on_train_input_config.num_epochs` = 0. Overwriting `num_epochs` to 1.
-W1009 16:36:29.452761 139971077932864 model_lib_v2.py:1099] Expected number of evaluation epochs is 1, but instead encountered `eval_on_train_input_config.num_epochs` = 0. Overwriting `num_epochs` to 1.
-INFO:tensorflow:Reading unweighted datasets: ['/app/project/project_data/splitted//valid/segment-11486225968269855324_92_000_112_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-11379226583756500423_6230_810_6250_810_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-11113047206980595400_2560_000_2580_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10072140764565668044_4060_000_4080_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10963653239323173269_1924_000_1944_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-1172406780360799916_1660_000_1680_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10927752430968246422_4940_000_4960_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-11940460932056521663_1760_000_1780_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-1005081002024129653_5313_150_5333_150_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-11799592541704458019_9828_750_9848_750_with_camera_labels.tfrecord']
-I1009 16:36:31.456425 139971077932864 dataset_builder.py:163] Reading unweighted datasets: ['/app/project/project_data/splitted//valid/segment-11486225968269855324_92_000_112_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-11379226583756500423_6230_810_6250_810_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-11113047206980595400_2560_000_2580_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10072140764565668044_4060_000_4080_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10963653239323173269_1924_000_1944_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-1172406780360799916_1660_000_1680_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10927752430968246422_4940_000_4960_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-11940460932056521663_1760_000_1780_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-1005081002024129653_5313_150_5333_150_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-11799592541704458019_9828_750_9848_750_with_camera_labels.tfrecord']
-INFO:tensorflow:Reading record datasets for input file: ['/app/project/project_data/splitted//valid/segment-11486225968269855324_92_000_112_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-11379226583756500423_6230_810_6250_810_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-11113047206980595400_2560_000_2580_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10072140764565668044_4060_000_4080_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10963653239323173269_1924_000_1944_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-1172406780360799916_1660_000_1680_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10927752430968246422_4940_000_4960_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-11940460932056521663_1760_000_1780_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-1005081002024129653_5313_150_5333_150_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-11799592541704458019_9828_750_9848_750_with_camera_labels.tfrecord']
-I1009 16:36:31.459776 139971077932864 dataset_builder.py:80] Reading record datasets for input file: ['/app/project/project_data/splitted//valid/segment-11486225968269855324_92_000_112_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-11379226583756500423_6230_810_6250_810_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-11113047206980595400_2560_000_2580_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10072140764565668044_4060_000_4080_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10963653239323173269_1924_000_1944_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-1172406780360799916_1660_000_1680_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10927752430968246422_4940_000_4960_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-11940460932056521663_1760_000_1780_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-1005081002024129653_5313_150_5333_150_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-11799592541704458019_9828_750_9848_750_with_camera_labels.tfrecord']
-INFO:tensorflow:Number of filenames to read: 10
-I1009 16:36:31.460110 139971077932864 dataset_builder.py:81] Number of filenames to read: 10
-WARNING:tensorflow:num_readers has been reduced to 10 to match input file shards.
-W1009 16:36:31.460361 139971077932864 dataset_builder.py:87] num_readers has been reduced to 10 to match input file shards.
+W1019 01:21:12.062642 139736207411008 model_lib_v2.py:1099] Expected number of evaluation epochs is 1, but instead encountered `eval_on_train_input_config.num_epochs` = 0. Overwriting `num_epochs` to 1.
+INFO:tensorflow:Reading unweighted datasets: ['/app/project/project_data/splitted//valid/segment-10500357041547037089_1474_800_1494_800_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10923963890428322967_1445_000_1465_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-11674150664140226235_680_000_700_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10241508783381919015_2889_360_2909_360_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10023947602400723454_1120_000_1140_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-12161824480686739258_1813_380_1833_380_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-1083056852838271990_4080_000_4100_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10927752430968246422_4940_000_4960_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-1208303279778032257_1360_000_1380_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10876852935525353526_1640_000_1660_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10455472356147194054_1560_000_1580_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-11318901554551149504_520_000_540_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-11566385337103696871_5740_000_5760_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10940952441434390507_1888_710_1908_710_with_camera_labels.tfrecord']
+I1019 01:21:13.861026 139736207411008 dataset_builder.py:163] Reading unweighted datasets: ['/app/project/project_data/splitted//valid/segment-10500357041547037089_1474_800_1494_800_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10923963890428322967_1445_000_1465_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-11674150664140226235_680_000_700_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10241508783381919015_2889_360_2909_360_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10023947602400723454_1120_000_1140_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-12161824480686739258_1813_380_1833_380_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-1083056852838271990_4080_000_4100_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10927752430968246422_4940_000_4960_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-1208303279778032257_1360_000_1380_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10876852935525353526_1640_000_1660_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10455472356147194054_1560_000_1580_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-11318901554551149504_520_000_540_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-11566385337103696871_5740_000_5760_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10940952441434390507_1888_710_1908_710_with_camera_labels.tfrecord']
+INFO:tensorflow:Reading record datasets for input file: ['/app/project/project_data/splitted//valid/segment-10500357041547037089_1474_800_1494_800_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10923963890428322967_1445_000_1465_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-11674150664140226235_680_000_700_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10241508783381919015_2889_360_2909_360_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10023947602400723454_1120_000_1140_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-12161824480686739258_1813_380_1833_380_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-1083056852838271990_4080_000_4100_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10927752430968246422_4940_000_4960_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-1208303279778032257_1360_000_1380_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10876852935525353526_1640_000_1660_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10455472356147194054_1560_000_1580_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-11318901554551149504_520_000_540_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-11566385337103696871_5740_000_5760_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10940952441434390507_1888_710_1908_710_with_camera_labels.tfrecord']
+I1019 01:21:13.864757 139736207411008 dataset_builder.py:80] Reading record datasets for input file: ['/app/project/project_data/splitted//valid/segment-10500357041547037089_1474_800_1494_800_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10923963890428322967_1445_000_1465_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-11674150664140226235_680_000_700_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10241508783381919015_2889_360_2909_360_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10023947602400723454_1120_000_1140_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-12161824480686739258_1813_380_1833_380_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-1083056852838271990_4080_000_4100_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10927752430968246422_4940_000_4960_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-1208303279778032257_1360_000_1380_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10876852935525353526_1640_000_1660_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10455472356147194054_1560_000_1580_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-11318901554551149504_520_000_540_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-11566385337103696871_5740_000_5760_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord', '/app/project/project_data/splitted//valid/segment-10940952441434390507_1888_710_1908_710_with_camera_labels.tfrecord']
+INFO:tensorflow:Number of filenames to read: 15
+I1019 01:21:13.865088 139736207411008 dataset_builder.py:81] Number of filenames to read: 15
+WARNING:tensorflow:num_readers has been reduced to 15 to match input file shards.
+W1019 01:21:13.865337 139736207411008 dataset_builder.py:87] num_readers has been reduced to 15 to match input file shards.
 WARNING:tensorflow:`shuffle` is false, but the input data stream is still slightly shuffled since `num_readers` > 1.
-W1009 16:36:31.462859 139971077932864 dataset_builder.py:94] `shuffle` is false, but the input data stream is still slightly shuffled since `num_readers` > 1.
+W1019 01:21:13.867685 139736207411008 dataset_builder.py:94] `shuffle` is false, but the input data stream is still slightly shuffled since `num_readers` > 1.
 WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/object_detection/builders/dataset_builder.py:101: parallel_interleave (from tensorflow.python.data.experimental.ops.interleave_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use `tf.data.Dataset.interleave(map_func, cycle_length, block_length, num_parallel_calls=tf.data.AUTOTUNE)` instead. If sloppy execution is desired, use `tf.data.Options.experimental_deterministic`.
-W1009 16:36:31.464545 139971077932864 deprecation.py:330] From /usr/local/lib/python3.8/dist-packages/object_detection/builders/dataset_builder.py:101: parallel_interleave (from tensorflow.python.data.experimental.ops.interleave_ops) is deprecated and will be removed in a future version.
+W1019 01:21:13.869325 139736207411008 deprecation.py:330] From /usr/local/lib/python3.8/dist-packages/object_detection/builders/dataset_builder.py:101: parallel_interleave (from tensorflow.python.data.experimental.ops.interleave_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use `tf.data.Dataset.interleave(map_func, cycle_length, block_length, num_parallel_calls=tf.data.AUTOTUNE)` instead. If sloppy execution is desired, use `tf.data.Options.experimental_deterministic`.
 WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/object_detection/builders/dataset_builder.py:236: DatasetV1.map_with_legacy_function (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use `tf.data.Dataset.map()
-W1009 16:36:31.516733 139971077932864 deprecation.py:330] From /usr/local/lib/python3.8/dist-packages/object_detection/builders/dataset_builder.py:236: DatasetV1.map_with_legacy_function (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+W1019 01:21:13.919981 139736207411008 deprecation.py:330] From /usr/local/lib/python3.8/dist-packages/object_detection/builders/dataset_builder.py:236: DatasetV1.map_with_legacy_function (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use `tf.data.Dataset.map()
 WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/util/dispatch.py:206: sparse_to_dense (from tensorflow.python.ops.sparse_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Create a `tf.sparse.SparseTensor` and use `tf.sparse.to_dense` instead.
-W1009 16:36:46.849950 139971077932864 deprecation.py:330] From /usr/local/lib/python3.8/dist-packages/tensorflow/python/util/dispatch.py:206: sparse_to_dense (from tensorflow.python.ops.sparse_ops) is deprecated and will be removed in a future version.
+W1019 01:21:28.375138 139736207411008 deprecation.py:330] From /usr/local/lib/python3.8/dist-packages/tensorflow/python/util/dispatch.py:206: sparse_to_dense (from tensorflow.python.ops.sparse_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Create a `tf.sparse.SparseTensor` and use `tf.sparse.to_dense` instead.
 WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/autograph/impl/api.py:464: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use `tf.cast` instead.
-W1009 16:36:51.432667 139971077932864 deprecation.py:330] From /usr/local/lib/python3.8/dist-packages/tensorflow/python/autograph/impl/api.py:464: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+W1019 01:21:32.475036 139736207411008 deprecation.py:330] From /usr/local/lib/python3.8/dist-packages/tensorflow/python/autograph/impl/api.py:464: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use `tf.cast` instead.
 INFO:tensorflow:Waiting for new checkpoint at training/reference_resnet101/
-I1009 16:37:01.462502 139971077932864 checkpoint_utils.py:140] Waiting for new checkpoint at training/reference_resnet101/
+I1019 01:21:41.228826 139736207411008 checkpoint_utils.py:140] Waiting for new checkpoint at training/reference_resnet101/
 INFO:tensorflow:Found new checkpoint at training/reference_resnet101/ckpt-26
-I1009 16:37:01.465543 139971077932864 checkpoint_utils.py:149] Found new checkpoint at training/reference_resnet101/ckpt-26
+I1019 01:21:41.231432 139736207411008 checkpoint_utils.py:149] Found new checkpoint at training/reference_resnet101/ckpt-26
 /usr/local/lib/python3.8/dist-packages/tensorflow/python/keras/backend.py:435: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
   warnings.warn('`tf.keras.backend.set_learning_phase` is deprecated and '
 WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/object_detection/eval_util.py:929: to_int64 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use `tf.cast` instead.
-W1009 16:39:53.655801 139971077932864 deprecation.py:330] From /usr/local/lib/python3.8/dist-packages/object_detection/eval_util.py:929: to_int64 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+W1019 01:23:08.280757 139736207411008 deprecation.py:330] From /usr/local/lib/python3.8/dist-packages/object_detection/eval_util.py:929: to_int64 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use `tf.cast` instead.
 INFO:tensorflow:Finished eval step 0
-I1009 16:39:53.699913 139971077932864 model_lib_v2.py:958] Finished eval step 0
+I1019 01:23:08.286808 139736207411008 model_lib_v2.py:958] Finished eval step 0
 WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/tensorflow/python/autograph/impl/api.py:464: py_func (from tensorflow.python.ops.script_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 tf.py_func is deprecated in TF V2. Instead, there are two
@@ -69,7 +69,7 @@ tf.py_func is deprecated in TF V2. Instead, there are two
     (it is not differentiable, and manipulates numpy arrays). It drops the
     stateful argument making all functions stateful.
     
-W1009 16:39:54.871715 139971077932864 deprecation.py:330] From /usr/local/lib/python3.8/dist-packages/tensorflow/python/autograph/impl/api.py:464: py_func (from tensorflow.python.ops.script_ops) is deprecated and will be removed in a future version.
+W1019 01:23:08.418788 139736207411008 deprecation.py:330] From /usr/local/lib/python3.8/dist-packages/tensorflow/python/autograph/impl/api.py:464: py_func (from tensorflow.python.ops.script_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 tf.py_func is deprecated in TF V2. Instead, there are two
     options available in V2.
@@ -83,83 +83,87 @@ tf.py_func is deprecated in TF V2. Instead, there are two
     stateful argument making all functions stateful.
     
 INFO:tensorflow:Finished eval step 100
-I1009 16:40:27.945200 139971077932864 model_lib_v2.py:958] Finished eval step 100
+I1019 01:23:37.616831 139736207411008 model_lib_v2.py:958] Finished eval step 100
 INFO:tensorflow:Finished eval step 200
-I1009 16:40:58.458818 139971077932864 model_lib_v2.py:958] Finished eval step 200
+I1019 01:24:04.247009 139736207411008 model_lib_v2.py:958] Finished eval step 200
 INFO:tensorflow:Finished eval step 300
-I1009 16:41:31.702398 139971077932864 model_lib_v2.py:958] Finished eval step 300
+I1019 01:24:30.955414 139736207411008 model_lib_v2.py:958] Finished eval step 300
 INFO:tensorflow:Finished eval step 400
-I1009 16:42:05.319909 139971077932864 model_lib_v2.py:958] Finished eval step 400
+I1019 01:24:58.665149 139736207411008 model_lib_v2.py:958] Finished eval step 400
 INFO:tensorflow:Finished eval step 500
-I1009 16:42:39.978395 139971077932864 model_lib_v2.py:958] Finished eval step 500
+I1019 01:25:25.719196 139736207411008 model_lib_v2.py:958] Finished eval step 500
 INFO:tensorflow:Finished eval step 600
-I1009 16:43:15.351205 139971077932864 model_lib_v2.py:958] Finished eval step 600
+I1019 01:25:52.992282 139736207411008 model_lib_v2.py:958] Finished eval step 600
 INFO:tensorflow:Finished eval step 700
-I1009 16:43:49.861570 139971077932864 model_lib_v2.py:958] Finished eval step 700
+I1019 01:26:20.228846 139736207411008 model_lib_v2.py:958] Finished eval step 700
 INFO:tensorflow:Finished eval step 800
-I1009 16:44:26.632565 139971077932864 model_lib_v2.py:958] Finished eval step 800
+I1019 01:26:47.638929 139736207411008 model_lib_v2.py:958] Finished eval step 800
 INFO:tensorflow:Finished eval step 900
-I1009 16:45:02.799525 139971077932864 model_lib_v2.py:958] Finished eval step 900
+I1019 01:27:15.330346 139736207411008 model_lib_v2.py:958] Finished eval step 900
 INFO:tensorflow:Finished eval step 1000
-I1009 16:45:39.225628 139971077932864 model_lib_v2.py:958] Finished eval step 1000
+I1019 01:27:42.530535 139736207411008 model_lib_v2.py:958] Finished eval step 1000
 INFO:tensorflow:Finished eval step 1100
-I1009 16:46:15.747991 139971077932864 model_lib_v2.py:958] Finished eval step 1100
+I1019 01:28:09.830285 139736207411008 model_lib_v2.py:958] Finished eval step 1100
 INFO:tensorflow:Finished eval step 1200
-I1009 16:46:52.907182 139971077932864 model_lib_v2.py:958] Finished eval step 1200
+I1019 01:28:37.278995 139736207411008 model_lib_v2.py:958] Finished eval step 1200
 INFO:tensorflow:Finished eval step 1300
-I1009 16:47:30.649023 139971077932864 model_lib_v2.py:958] Finished eval step 1300
+I1019 01:29:04.417051 139736207411008 model_lib_v2.py:958] Finished eval step 1300
 INFO:tensorflow:Finished eval step 1400
-I1009 16:48:06.666500 139971077932864 model_lib_v2.py:958] Finished eval step 1400
+I1019 01:29:31.504600 139736207411008 model_lib_v2.py:958] Finished eval step 1400
 INFO:tensorflow:Finished eval step 1500
-I1009 16:48:42.529976 139971077932864 model_lib_v2.py:958] Finished eval step 1500
+I1019 01:29:58.509754 139736207411008 model_lib_v2.py:958] Finished eval step 1500
 INFO:tensorflow:Finished eval step 1600
-I1009 16:49:18.624888 139971077932864 model_lib_v2.py:958] Finished eval step 1600
+I1019 01:30:25.612328 139736207411008 model_lib_v2.py:958] Finished eval step 1600
 INFO:tensorflow:Finished eval step 1700
-I1009 16:49:54.144506 139971077932864 model_lib_v2.py:958] Finished eval step 1700
+I1019 01:30:52.701359 139736207411008 model_lib_v2.py:958] Finished eval step 1700
 INFO:tensorflow:Finished eval step 1800
-I1009 16:50:30.587096 139971077932864 model_lib_v2.py:958] Finished eval step 1800
+I1019 01:31:19.634548 139736207411008 model_lib_v2.py:958] Finished eval step 1800
 INFO:tensorflow:Finished eval step 1900
-I1009 16:51:06.520051 139971077932864 model_lib_v2.py:958] Finished eval step 1900
-W1009 16:51:36.698487 139971077932864 object_detection_evaluation.py:1300] The following classes have no ground truth examples: [3 4]
-I1009 16:51:39.895314 139971077932864 object_detection_evaluation.py:1335] average_precision: 0.038229
-I1009 16:51:39.928636 139971077932864 object_detection_evaluation.py:1335] average_precision: 0.000000
+I1019 01:31:46.832736 139736207411008 model_lib_v2.py:958] Finished eval step 1900
+INFO:tensorflow:Finished eval step 2000
+I1019 01:32:13.820452 139736207411008 model_lib_v2.py:958] Finished eval step 2000
+INFO:tensorflow:Finished eval step 2100
+I1019 01:32:41.220012 139736207411008 model_lib_v2.py:958] Finished eval step 2100
+INFO:tensorflow:Finished eval step 2200
+I1019 01:33:08.493615 139736207411008 model_lib_v2.py:958] Finished eval step 2200
+INFO:tensorflow:Finished eval step 2300
+I1019 01:33:35.911788 139736207411008 model_lib_v2.py:958] Finished eval step 2300
+INFO:tensorflow:Finished eval step 2400
+I1019 01:34:02.764601 139736207411008 model_lib_v2.py:958] Finished eval step 2400
+INFO:tensorflow:Finished eval step 2500
+I1019 01:34:29.704017 139736207411008 model_lib_v2.py:958] Finished eval step 2500
+INFO:tensorflow:Finished eval step 2600
+I1019 01:34:56.989549 139736207411008 model_lib_v2.py:958] Finished eval step 2600
+INFO:tensorflow:Finished eval step 2700
+I1019 01:35:24.096724 139736207411008 model_lib_v2.py:958] Finished eval step 2700
+INFO:tensorflow:Finished eval step 2800
+I1019 01:35:51.232211 139736207411008 model_lib_v2.py:958] Finished eval step 2800
+INFO:tensorflow:Finished eval step 2900
+I1019 01:36:18.595138 139736207411008 model_lib_v2.py:958] Finished eval step 2900
+W1019 01:36:39.162858 139736207411008 object_detection_evaluation.py:1300] The following classes have no ground truth examples: [3 4]
+I1019 01:36:40.684898 139736207411008 object_detection_evaluation.py:1335] average_precision: 0.000014
+I1019 01:36:40.709873 139736207411008 object_detection_evaluation.py:1335] average_precision: 0.000000
 /usr/local/lib/python3.8/dist-packages/object_detection/utils/metrics.py:145: RuntimeWarning: invalid value encountered in true_divide
   num_images_correctly_detected_per_class / num_gt_imgs_per_class)
 INFO:tensorflow:Eval metrics at step 25000
-I1009 16:51:39.960660 139971077932864 model_lib_v2.py:1007] Eval metrics at step 25000
-INFO:tensorflow:	+ PascalBoxes_Precision/mAP@0.5IOU: 0.019115
-I1009 16:51:39.978380 139971077932864 model_lib_v2.py:1010] 	+ PascalBoxes_Precision/mAP@0.5IOU: 0.019115
-INFO:tensorflow:	+ PascalBoxes_PerformanceByCategory/AP@0.5IOU/vehicle: 0.038229
-I1009 16:51:39.981142 139971077932864 model_lib_v2.py:1010] 	+ PascalBoxes_PerformanceByCategory/AP@0.5IOU/vehicle: 0.038229
+I1019 01:36:40.732521 139736207411008 model_lib_v2.py:1007] Eval metrics at step 25000
+INFO:tensorflow:	+ PascalBoxes_Precision/mAP@0.5IOU: 0.000007
+I1019 01:36:40.737855 139736207411008 model_lib_v2.py:1010] 	+ PascalBoxes_Precision/mAP@0.5IOU: 0.000007
+INFO:tensorflow:	+ PascalBoxes_PerformanceByCategory/AP@0.5IOU/vehicle: 0.000014
+I1019 01:36:40.739031 139736207411008 model_lib_v2.py:1010] 	+ PascalBoxes_PerformanceByCategory/AP@0.5IOU/vehicle: 0.000014
 INFO:tensorflow:	+ PascalBoxes_PerformanceByCategory/AP@0.5IOU/pedestrian: 0.000000
-I1009 16:51:39.983596 139971077932864 model_lib_v2.py:1010] 	+ PascalBoxes_PerformanceByCategory/AP@0.5IOU/pedestrian: 0.000000
+I1019 01:36:40.739767 139736207411008 model_lib_v2.py:1010] 	+ PascalBoxes_PerformanceByCategory/AP@0.5IOU/pedestrian: 0.000000
 INFO:tensorflow:	+ PascalBoxes_PerformanceByCategory/AP@0.5IOU/cyclist: nan
-I1009 16:51:39.985960 139971077932864 model_lib_v2.py:1010] 	+ PascalBoxes_PerformanceByCategory/AP@0.5IOU/cyclist: nan
-INFO:tensorflow:	+ Loss/localization_loss: 0.524127
-I1009 16:51:39.987757 139971077932864 model_lib_v2.py:1010] 	+ Loss/localization_loss: 0.524127
-INFO:tensorflow:	+ Loss/classification_loss: 0.483823
-I1009 16:51:39.989621 139971077932864 model_lib_v2.py:1010] 	+ Loss/classification_loss: 0.483823
-INFO:tensorflow:	+ Loss/regularization_loss: 0.606705
-I1009 16:51:39.991626 139971077932864 model_lib_v2.py:1010] 	+ Loss/regularization_loss: 0.606705
-INFO:tensorflow:	+ Loss/total_loss: 1.614655
-I1009 16:51:39.993566 139971077932864 model_lib_v2.py:1010] 	+ Loss/total_loss: 1.614655
+I1019 01:36:40.740487 139736207411008 model_lib_v2.py:1010] 	+ PascalBoxes_PerformanceByCategory/AP@0.5IOU/cyclist: nan
+INFO:tensorflow:	+ Loss/localization_loss: 0.871480
+I1019 01:36:40.741059 139736207411008 model_lib_v2.py:1010] 	+ Loss/localization_loss: 0.871480
+INFO:tensorflow:	+ Loss/classification_loss: 3844.752441
+I1019 01:36:40.741654 139736207411008 model_lib_v2.py:1010] 	+ Loss/classification_loss: 3844.752441
+INFO:tensorflow:	+ Loss/regularization_loss: 83611426816.000000
+I1019 01:36:40.742267 139736207411008 model_lib_v2.py:1010] 	+ Loss/regularization_loss: 83611426816.000000
+INFO:tensorflow:	+ Loss/total_loss: 83611435008.000000
+I1019 01:36:40.742835 139736207411008 model_lib_v2.py:1010] 	+ Loss/total_loss: 83611435008.000000
 INFO:tensorflow:Waiting for new checkpoint at training/reference_resnet101/
-I1009 16:51:40.341786 139971077932864 checkpoint_utils.py:140] Waiting for new checkpoint at training/reference_resnet101/
-Traceback (most recent call last):
-  File "experiments/model_main_tf2.py", line 114, in <module>
-    tf.compat.v1.app.run()
-  File "/usr/local/lib/python3.8/dist-packages/tensorflow/python/platform/app.py", line 40, in run
-    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
-  File "/usr/local/lib/python3.8/dist-packages/absl/app.py", line 312, in run
-    _run_main(main, args)
-  File "/usr/local/lib/python3.8/dist-packages/absl/app.py", line 258, in _run_main
-    sys.exit(main(argv))
-  File "experiments/model_main_tf2.py", line 81, in main
-    model_lib_v2.eval_continuously(
-  File "/usr/local/lib/python3.8/dist-packages/object_detection/model_lib_v2.py", line 1128, in eval_continuously
-    for latest_checkpoint in tf.train.checkpoints_iterator(
-  File "/usr/local/lib/python3.8/dist-packages/tensorflow/python/training/checkpoint_utils.py", line 198, in checkpoints_iterator
-    new_checkpoint_path = wait_for_new_checkpoint(
-  File "/usr/local/lib/python3.8/dist-packages/tensorflow/python/training/checkpoint_utils.py", line 147, in wait_for_new_checkpoint
-    time.sleep(seconds_to_sleep)
-KeyboardInterrupt
+I1019 01:36:40.932332 139736207411008 checkpoint_utils.py:140] Waiting for new checkpoint at training/reference_resnet101/
+INFO:tensorflow:Timed-out waiting for a checkpoint.
+I1019 01:41:40.392772 139736207411008 checkpoint_utils.py:203] Timed-out waiting for a checkpoint.
